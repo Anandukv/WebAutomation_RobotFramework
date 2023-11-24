@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231123 22:26:50.078" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Data Driven Testing" source="C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Data_Driven_Testing.robot">
+<test id="s1-s1-t1" name="verify Login fails - Blank username and password" line="20">
+<kw name="start testcase1" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231123 22:26:52.218" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20231123 22:29:13.626" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231123 22:29:13.626" level="FAIL">WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</msg>
+<status status="FAIL" starttime="20231123 22:26:52.218" endtime="20231123 22:29:38.004"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.004" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:26:52.218" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="finish testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<status status="PASS" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:26:52.202" endtime="20231123 22:29:38.019">Setup failed:
+WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</status>
+</test>
+<test id="s1-s1-t2" name="verify Login fails - Blank username" line="21">
+<kw name="start testcase1" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231123 22:29:38.056" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20231123 22:31:18.528" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231123 22:31:18.528" level="FAIL">WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</msg>
+<status status="FAIL" starttime="20231123 22:29:38.050" endtime="20231123 22:31:18.528"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231123 22:31:18.528" endtime="20231123 22:31:18.528"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:31:18.528" endtime="20231123 22:31:18.528"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:29:38.050" endtime="20231123 22:31:18.528"/>
+</kw>
+<kw name="finish testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231123 22:31:18.528" endtime="20231123 22:31:18.528"/>
+</kw>
+<status status="PASS" starttime="20231123 22:31:18.528" endtime="20231123 22:31:18.544"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:29:38.050" endtime="20231123 22:31:18.544">Setup failed:
+WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</status>
+</test>
+<test id="s1-s1-t3" name="verify Login fails - Blank password" line="22">
+<kw name="start testcase1" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231123 22:31:18.544" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20231123 22:38:37.985" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B05AB]
+	(No symbol) [0x00007FF78879E997]
+	(No symbol) [0x00007FF78879E7A8]
+	(No symbol) [0x00007FF78879CF0E]
+	(No symbol) [0x00007FF78879D9CE]
+	(No symbol) [0x00007FF7887BB90F]
+	(No symbol) [0x00007FF788837D70]
+	(No symbol) [0x00007FF7888120AA]
+	(No symbol) [0x00007FF78882AAA4]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</msg>
+<msg timestamp="20231123 22:38:41.635" level="FAIL">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B05AB]
+	(No symbol) [0x00007FF78879E997]
+	(No symbol) [0x00007FF78879E7A8]
+	(No symbol) [0x00007FF78879CF0E]
+	(No symbol) [0x00007FF78879D9CE]
+	(No symbol) [0x00007FF7887AA20F]
+	(No symbol) [0x00007FF7887BB551]
+	(No symbol) [0x00007FF7887BFC1A]
+	(No symbol) [0x00007FF78879E032]
+	(No symbol) [0x00007FF7887BB42A]
+	(No symbol) [0x00007FF78882A9C8]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</msg>
+<status status="FAIL" starttime="20231123 22:31:18.544" endtime="20231123 22:38:41.959"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231123 22:38:42.122" endtime="20231123 22:38:42.122"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:38:42.122" endtime="20231123 22:38:42.122"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:31:18.544" endtime="20231123 22:38:42.122"/>
+</kw>
+<kw name="finish testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231123 22:38:42.122" endtime="20231123 22:39:21.210"/>
+</kw>
+<status status="PASS" starttime="20231123 22:38:42.122" endtime="20231123 22:39:21.210"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:31:18.544" endtime="20231123 22:39:21.210">Setup failed:
+TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B05AB]
+	(No symbol) [0x00007FF78879E997]
+	(No symbol) [0x00007FF78879E7A8]
+	(No symbol) [0x00007FF78879CF0E]
+	(No symbol) [0x00007FF78879D9CE]
+	(No symbol) [0x00007FF7887AA20F]
+	(No symbol) [0x00007FF7887BB551]
+	(No symbol) [0x00007FF7887BFC1A]
+	(No symbol) [0x00007FF78879E032]
+	(No symbol) [0x00007FF7887BB42A]
+	(No symbol) [0x00007FF78882A9C8]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</status>
+</test>
+<test id="s1-s1-t4" name="verify Login fails - invalid username and password" line="23">
+<kw name="start testcase1" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231123 22:39:22.312" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231123 22:39:22.297" endtime="20231123 22:41:43.598"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231123 22:41:43.600" endtime="20231123 22:41:45.705"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231123 22:41:48.629" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231123 22:41:45.705" endtime="20231123 22:41:48.629"/>
+</kw>
+<status status="PASS" starttime="20231123 22:39:21.911" endtime="20231123 22:41:48.629"/>
+</kw>
+<kw name="Verify invalid Login Scenarios">
+<arg>standard_user1</arg>
+<arg>secret_sauce1</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${username_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20231123 22:41:49.076" endtime="20231123 22:41:51.930"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_txt}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231123 22:41:52.092" level="INFO">Typing text 'standard_user1' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20231123 22:41:51.977" endtime="20231123 22:41:52.299"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20231123 22:41:52.299" endtime="20231123 22:41:52.364"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231123 22:41:52.364" level="INFO">Typing text 'secret_sauce1' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20231123 22:41:52.364" endtime="20231123 22:41:52.485"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231123 22:41:52.485" level="INFO">Clicking button 'id:login-button'.</msg>
+<status status="PASS" starttime="20231123 22:41:52.485" endtime="20231123 22:41:55.866"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231123 22:41:57.979" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231123 22:41:55.866" endtime="20231123 22:41:57.979"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${text_error}</arg>
+<arg>${error_message}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20231123 22:41:58.062" level="INFO">Element 'xpath://h3[@data-test='error']' contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<status status="PASS" starttime="20231123 22:41:57.979" endtime="20231123 22:41:58.062"/>
+</kw>
+<status status="PASS" starttime="20231123 22:41:49.076" endtime="20231123 22:41:58.062"/>
+</kw>
+<kw name="finish testcase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231123 22:41:58.062" endtime="20231123 22:42:03.165"/>
+</kw>
+<status status="PASS" starttime="20231123 22:41:58.062" endtime="20231123 22:42:03.386"/>
+</kw>
+<status status="PASS" starttime="20231123 22:39:21.911" endtime="20231123 22:42:03.386"/>
+</test>
+<doc>Basic search functionality</doc>
+<status status="FAIL" starttime="20231123 22:26:50.112" endtime="20231123 22:42:04.930"/>
+</suite>
+<status status="FAIL" starttime="20231123 22:26:50.089" endtime="20231123 22:42:05.906"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="3" skip="0" id="s1-s1" name="Data Driven Testing">Suites.Data Driven Testing</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231123 22:38:37.985" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B05AB]
+	(No symbol) [0x00007FF78879E997]
+	(No symbol) [0x00007FF78879E7A8]
+	(No symbol) [0x00007FF78879CF0E]
+	(No symbol) [0x00007FF78879D9CE]
+	(No symbol) [0x00007FF7887BB90F]
+	(No symbol) [0x00007FF788837D70]
+	(No symbol) [0x00007FF7888120AA]
+	(No symbol) [0x00007FF78882AAA4]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,31 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B05AB]
+	(No symbol) [0x00007FF78879E997]
+	(No symbol) [0x00007FF78879E7A8]
+	(No symbol) [0x00007FF78879CF0E]
+	(No symbol) [0x00007FF78879D9CE]
+	(No symbol) [0x00007FF7887BB90F]
+	(No symbol) [0x00007FF788837D70]
+	(No symbol) [0x00007FF7888120AA]
+	(No symbol) [0x00007FF78882AAA4]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+
+[ WARN ] Multiple tests with name 'verify Login fail - scenarios' executed in suite 'Suites.DDT with XLSX'.
+[ WARN ] Multiple tests with name 'verify Login fail - scenarios' executed in suite 'Suites.DDT with XLSX'.
+[ WARN ] Multiple tests with name 'verify Login fail - scenarios' executed in suite 'Suites.DDT with XLSX'.

@@ -1,0 +1,64 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.DDT with XLSX :: Basic search functionality                            
+==============================================================================
+verify Login fail - scenarios                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\DDT_with_XLSX.robot:18
+    T:  verify Login fail - scenarios    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\DDT_with_XLSX.robot:6
+      start testcase1    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\Resources\CommonFunctionality.robot:19
+      Open Browser    ${url1}    ${browser}
+      |  ${url1} = https://www.saucedemo.com/ (str)
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B05AB]
+	(No symbol) [0x00007FF78879E997]
+	(No symbol) [0x00007FF78879E7A8]
+	(No symbol) [0x00007FF78879CF0E]
+	(No symbol) [0x00007FF78879D9CE]
+	(No symbol) [0x00007FF7887AA20F]
+	(No symbol) [0x00007FF7887BB551]
+	(No symbol) [0x00007FF7887BFC1A]
+	(No symbol) [0x00007FF78879E032]
+	(No symbol) [0x00007FF7887BB42A]
+	(No symbol) [0x00007FF78882A9C8]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+------------------------------------------------------------------------------
+verify Login fail - scenarios                                         | PASS |
+------------------------------------------------------------------------------
+verify Login fail - scenarios                                         | PASS |
+------------------------------------------------------------------------------
+verify Login fail - scenarios                                         | PASS |
+------------------------------------------------------------------------------
+Suites.DDT with XLSX :: Basic search functionality                    | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\pabot_results\2\output.xml

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231123 22:26:52.670" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="BasicCommands in Test Automation" source="C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\BasicCommands_in_Test_Automation.robot">
+<test id="s1-s1-t1" name="Run Basic Commands" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231123 22:26:53.307" level="INFO">Opening browser 'headlesschrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg timestamp="20231123 22:29:13.626" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231123 22:29:13.626" level="FAIL">WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</msg>
+<status status="FAIL" starttime="20231123 22:26:53.307" endtime="20231123 22:29:38.004"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.004" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Get Selenium Timeout" library="SeleniumLibrary">
+<var>${time}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionAlert()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunction()']</arg>
+<arg>../Screenshots/screenshot1.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionConfirm()']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.019" endtime="20231123 22:29:38.019"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionPrompt()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>leave</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>Please enter your name:</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>frame-one796456169</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:RESULT_TextField-0</arg>
+<arg>Appu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>country</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.035"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.035" endtime="20231123 22:29:38.050"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>country</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.050" endtime="20231123 22:29:38.050"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.050" endtime="20231123 22:29:38.055"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>colors</arg>
+<arg>Green</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.055" endtime="20231123 22:29:38.055"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>colors</arg>
+<arg>Red</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.055" endtime="20231123 22:29:38.056"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Unselect From List By Label" library="SeleniumLibrary">
+<arg>colors</arg>
+<arg>Red</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${location}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${location}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://a[@class='active']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${col}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${col}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${data}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[2]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Table Column Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>Master In Selenium</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>2</arg>
+<arg>Amit</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath://button[normalize-space()='Copy Text']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>xpath://p[normalize-space()='Drag me to my target']</arg>
+<arg>xpath://div[@id='droppable']</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,1500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${Alllinkcount}</var>
+<arg>xpath://a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Alllinkcount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${Alllinkcount} == 9</arg>
+<arg>log to console</arg>
+<arg>number of links is 9</arg>
+<arg>ELSE IF</arg>
+<arg>${Alllinkcount} &gt; 10 and ${Alllinkcount} &lt; 14</arg>
+<arg>log to console</arg>
+<arg>number of links is 10-14</arg>
+<arg>ELSE</arg>
+<arg>KEYWORD 3</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{links}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${Alllinkcount}+1</value>
+<iter>
+<var name="${i}"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${linktext}</var>
+<arg>xpath:(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${linktext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.057"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${linktext}' == 'Blogger'</arg>
+<arg>click link</arg>
+<arg>link:${linktext}</arg>
+<arg>ELSE IF</arg>
+<arg>'${linktext}' == 'Home'</arg>
+<arg>KEYWORD 1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.073" endtime="20231123 22:29:38.073"/>
+</kw>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.073"/>
+</iter>
+<status status="NOT RUN" starttime="20231123 22:29:38.057" endtime="20231123 22:29:38.073"/>
+</for>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20231123 22:29:38.073" endtime="20231123 22:29:38.073"/>
+</kw>
+<status status="FAIL" starttime="20231123 22:26:53.307" endtime="20231123 22:29:38.073">WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+</status>
+</test>
+<status status="FAIL" starttime="20231123 22:26:52.786" endtime="20231123 22:29:38.073"/>
+</suite>
+<status status="FAIL" starttime="20231123 22:26:52.766" endtime="20231123 22:29:38.073"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="BasicCommands in Test Automation">Suites.BasicCommands in Test Automation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,116 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Testcase1                                                              
+==============================================================================
+LogintoHRM :: test case for practise                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Testcase1.robot:20
+    T:  LogintoHRM    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Testcase1.robot:22
+      Open Browser    ${url2}    ${browser}
+      |  ${url2} = https://opensource-demo.orangehrmlive.com/ (str)
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+------------------------------------------------------------------------------
+Suites.Testcase1                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites.Testcase 1 :: Basic search functionality                               
+==============================================================================
+Verify Login Fails with wrong username                                  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Testcase_1.robot:18
+    T:  Verify Login Fails with wrong username    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Testcase_1.robot:6
+      start testcase1    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\Resources\CommonFunctionality.robot:19
+      Open Browser    ${url1}    ${browser}
+      |  ${url1} = https://www.saucedemo.com/ (str)
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+WebDriverException: Message: chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF7889882B2+55298]
+	(No symbol) [0x00007FF7888F5E02]
+	(No symbol) [0x00007FF7887B045D]
+	(No symbol) [0x00007FF7887A1DD0]
+	(No symbol) [0x00007FF7887E31F4]
+	(No symbol) [0x00007FF7887DEC6C]
+	(No symbol) [0x00007FF7887DB30E]
+	(No symbol) [0x00007FF78881A198]
+	(No symbol) [0x00007FF788819CB0]
+	(No symbol) [0x00007FF788811E83]
+	(No symbol) [0x00007FF7887E670A]
+	(No symbol) [0x00007FF7887E7964]
+	GetHandleVerifier [0x00007FF788D00AAB+3694587]
+	GetHandleVerifier [0x00007FF788D5728E+4048862]
+	GetHandleVerifier [0x00007FF788D4F173+4015811]
+	GetHandleVerifier [0x00007FF788A247D6+695590]
+	(No symbol) [0x00007FF788900CE8]
+	(No symbol) [0x00007FF7888FCF34]
+	(No symbol) [0x00007FF7888FD062]
+	(No symbol) [0x00007FF7888ED3A3]
+	BaseThreadInitThunk [0x00007FFE43887344+20]
+	RtlUserThreadStart [0x00007FFE44E226B1+33]
+------------------------------------------------------------------------------
+Verify Login Fails with wrong password                                | PASS |
+------------------------------------------------------------------------------
+Verify Login Fails with wrong username and password                   | PASS |
+------------------------------------------------------------------------------
+Verify Login error message for blank password                         | PASS |
+------------------------------------------------------------------------------
+Verify Login error message for blank username                         | PASS |
+------------------------------------------------------------------------------
+Verify Login with valid username and password                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Testcase_1.robot:58
+    T:  Verify Login with valid username and password    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\TestCases\Testcase_1.robot:63
+      Element Should Contain    ${text_error}    Epic sadface: Username and password do not match any user in this service
+      |  ${text_error} = xpath://h3[@data-test='error'] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://h3[@data-test='error']' not found.
+------------------------------------------------------------------------------
+Suites.Testcase 1 :: Basic search functionality                       | FAIL |
+6 tests, 4 passed, 2 failed
+==============================================================================
+Suites                                                                | FAIL |
+7 tests, 4 passed, 3 failed
+==============================================================================
+Output:  C:\Users\91953\PycharmProjects\PythonSeleniumRobotframework\pabot_results\4\output.xml
